@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/17dff8f39f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images\logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">My Works</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <!-- <i class="fa-solid fa-bars"></i> -->
+            </nav>
+            <div class="header-content">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,i am <span>Sonu Kumar</span><br>from India</h1>
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="images/single.jpg" alt="Sonu Kumar">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- about                               -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\Profile picture (7).png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am an energetic and motivated professional, passionate about tackling challenges in dynamic environments. With a strong commitment to continuous learning and adapting to emerging technologies, I thrive on delivering innovative solutions. Known for my analytical thinking, teamwork, and communication skills, I aim to make a meaningful impact.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>ui/ux</span><br>designing web/app interface</li>
+                            <li><span>web development</span><br>web app development</li>
+                            <li><span>app development</span><br>building android ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>c++</span><br>project work</li>
+                            <li><span>hyper text markup lamguage
+
+                                </span><br>portfolio work</li>
+                            <li><span>css</span><br>portfolio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Undergraduate</span><br>Narula Institute of Technology</li>
+                            <li><span>Higher Secondary Education</span><br>Gurukul vidyapeeth</li>
+                            <li><span>schooling</span><br>St paul's High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>clg project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus officia pariatur
+                        dicta laboriosam, libero ipsam. Cum, quidem iste obcaecati fugit, aspernatur aperiam, possimus
+                        maiores numquam hic atque dignissimos doloribus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h2>Hackthon</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus officia pariatur
+                        dicta laboriosam, libero ipsam. Cum, quidem iste obcaecati fugit, aspernatur aperiam, possimus
+                        maiores numquam hic atque dignissimos doloribus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person"></i>
+                    <h2>personal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus officia pariatur
+                        dicta laboriosam, libero ipsam. Cum, quidem iste obcaecati fugit, aspernatur aperiam, possimus
+                        maiores numquam hic atque dignissimos doloribus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images\img1.jpg">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempora saepe sed nam quasi
+                            possimus iste, beatae voluptatibus, quidem non eius eum ipsum cumque id neque, totam earum
+                            debitis error.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\img2.jpg">
+                    <div class="layer">
+                        <h3>music app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempora saepe sed nam quasi
+                            possimus iste, beatae voluptatibus, quidem non eius eum ipsum cumque id neque, totam earum
+                            debitis error.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\img3.jpg">
+                    <div class="layer">
+                        <h3>online shopping app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempora saepe sed nam quasi
+                            possimus iste, beatae voluptatibus, quidem non eius eum ipsum cumque id neque, totam earum
+                            debitis error.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-duotone fa-solid fa-paper-plane"></i>email</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>72779703__</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sonu-kumar2802/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/kr_sonu02/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images\SONU KUMAR11.pdf" download class="btn btn2">Download cv/Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your Name" required>
+                        <input type="email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class=" btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ sonu for the purpose of personal showcase <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
