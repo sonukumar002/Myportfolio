@@ -1,2 +1,2 @@
 # Myportfolio
-It is about my ortfolio website
+It is about my portfolio website
