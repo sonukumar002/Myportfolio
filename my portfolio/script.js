@@ -36,3 +36,29 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
+// const certificates = [
+//     { img: "images/ibm cloud.png", pdf: "images\ibm cloud computing.pdf" },
+//     { img: "images/ibm html css.png", pdf: "images/intro to html css.pdf" },
+//     // Add more certificates here
+//   ];
+  
+//   const container = document.getElementById("certificates");
+  
+//   certificates.forEach(cert => {
+//     const certDiv = document.createElement("div");
+//     certDiv.className = "certificate";
+  
+//     const img = document.createElement("img");
+//     img.src = cert.img;
+//     img.alt = "Certificate Sample";
+  
+//     const link = document.createElement("a");
+//     link.href = cert.pdf;
+//     link.target = "_blank";
+//     link.textContent = "View Full Certificate";
+  
+//     certDiv.appendChild(img);
+//     certDiv.appendChild(link);
+//     container.appendChild(certDiv);
+//   });
+  
