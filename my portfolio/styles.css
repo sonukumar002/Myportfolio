@@ -1,9 +1,8 @@
 * {
     margin: 0;
-    /* padding: 0; */
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
-    
+
 
 }
 
@@ -13,15 +12,13 @@ html {
 
 body {
     background-color: #14213d;
-    /* background-color: #3a554c; */
     color: #ffffff;
 }
 
 #header {
     width: 100%;
-    height: 80vh;  
-    padding-top: 70px; /* Adjust based on the navbar height */
-
+    height: 80vh;
+    padding-top: 70px;
 }
 
 .container {
@@ -30,17 +27,16 @@ body {
 }
 
 nav {
-    /* background-color: #e5e5e5; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
-    /* chat */
     position: fixed;
     top: 0;
-    z-index: 1000;/* Ensure it stays above other elements */
+    z-index: 1000;
+    /* Ensure it stays above other elements */
     background-color: #14213d;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add shadow for better visibility */
     width: 100%;
     left: 0;
     padding-left: 10px;
@@ -84,17 +80,20 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    margin-top: 85px /* Ensure it's vertically centered */
+    margin-top: 85px
+        /* Ensure it's vertically centered */
 }
 
 .header-text {
     width: 50%;
-    text-align: left; /* Ensure text alignment remains left */
+    text-align: left;
+    /* Ensure text alignment remains left */
 }
 
 .featured-image {
@@ -106,21 +105,22 @@ nav ul li a:hover::after {
 .featured-image .image img {
     width: 60vh;
     border-radius: 50%;
-    /* gpt part */
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 
 }
+
 .featured-image .image img:hover {
-    transform: scale(1.2) 
-    rotate(5deg);
-     /* Slight zoom and rotation */
-    box-shadow: 0 12px 10px rgba(200, 123, 123, 0.5); /* Add shadow for depth */
+    transform: scale(1.2) rotate(5deg);
+    /* Slight zoom and rotation */
+    box-shadow: 0 12px 10px rgba(200, 123, 123, 0.5);
+    /* Add shadow for depth */
 }
 
 .header-text p {
     font-size: 40px;
     color: #fca311;
 }
+
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
@@ -129,6 +129,7 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #d4a373;
 }
+
 /* about */
 #about {
     padding: 80px 0;
@@ -205,17 +206,22 @@ nav ul li a:hover::after {
 
 .tab-contents {
     display: none;
-    padding: 20px; /* Add padding for the content */
-    background-color: #1c1c1c; /* Default background color */
-    border-radius: 10px; /* Smooth corners for the box */
-    color: #e5e5e5; /* Ensure text is readable */
+    padding: 20px;
+    /* Add padding for the content */
+    background-color: #1c1c1c;
+    /* Default background color */
+    border-radius: 10px;
+    /* Smooth corners for the box */
+    color: #e5e5e5;
+    /* Ensure text is readable */
 }
 
 .tab-contents.active-tab {
     display: block;
     /* color: red; */
     background-color: #625f5f;
-    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth transition */
 }
 
 #projects {
@@ -366,42 +372,51 @@ nav ul li a:hover::after {
 .btn:hover {
     background: #fca311;
 }
+
 /* certificates */
 #certificates {
     text-align: center;
     /* padding: 50px; */
-  }
-  
-  .certificate {
+}
+
+.certificate {
     display: inline-block;
     margin: 20px;
-  }
-  #certificates h2 {
+}
+
+#certificates h2 {
     /* padding-left: 20px; */
-    font-size:40px;
-  }
-  .certificate img {
-    width: 300px; /* Adjust as needed */
+    font-size: 40px;
+}
+
+.certificate img {
+    width: 300px;
+    /* Adjust as needed */
     height: auto;
     border: 5px solid #fca311;
     border-radius: 10px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition over 0.4 seconds */
-  }
-  
-  .certificate a {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    /* Smooth transition over 0.4 seconds */
+}
+
+.certificate a {
     display: block;
     margin-top: 10px;
     color: #007bff;
     text-decoration: none;
-  }
-  .certificate img:hover {
-    transform: scale(1.1); /* Slightly enlarge the image on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
-  }
-  .certificate a:hover {
+}
+
+.certificate img:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the image on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    /* Add a shadow effect */
+}
+
+.certificate a:hover {
     text-decoration: underline;
-  }
-  
+}
+
 /* contact */
 .contact-left {
     flex-basis: 35%;
@@ -498,11 +513,11 @@ nav .fa-solid {
 @media only screen and (max-width:600px) {
     /* #header {
         /* background-image: images\single.jpg; */
-    /* } */ 
+    /* } */
 
     #header {
-       height: auto;
-       padding-top: 20px;
+        height: auto;
+        padding-top: 20px;
     }
 
     /* .header-text h1 { 
@@ -512,6 +527,7 @@ nav .fa-solid {
         width: 100%;
         border-radius: 30px;
     }
+
     nav .fa-regular {
         display: block;
         font-size: 25px;
@@ -587,17 +603,20 @@ nav .fa-solid {
     .copyright {
         font-size: 14px;
     }
+
     .worklist {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
+        /* Single column layout */
         grid-gap: 20px;
     }
 
     .layer {
-        padding: 0px; 
+        padding: 0px;
     }
 
     .layer h3 {
-        font-size: 16px; /* Adjust font size */
+        font-size: 16px;
+        /* Adjust font size */
     }
 
     .layer p {
@@ -611,6 +630,7 @@ nav .fa-solid {
         height: 50px;
         line-height: 50px;
     }
+
     .header-content {
         flex-direction: column;
         align-items: center;
@@ -641,4 +661,3 @@ nav .fa-solid {
     margin-top: -40px;
     display: block;
 }
-
