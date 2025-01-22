@@ -26,16 +26,16 @@
                 <!-- <i class="fa-solid fa-bars"></i> -->
             </nav>
             <div class="header-content">
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi,i am <span>Sonu Kumar</span><br>from India</h1>
-            </div>
-            <div class="featured-image">
-                <div class="image">
-                    <img src="images/single.jpg" alt="Sonu Kumar">
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi,i am <span>Sonu Kumar</span><br>from India</h1>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="images/single.jpg" alt="Sonu Kumar">
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
     <!-- about                               -->
@@ -47,7 +47,10 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About me</h1>
-                    <p>I am an energetic and motivated professional, passionate about tackling challenges in dynamic environments. With a strong commitment to continuous learning and adapting to emerging technologies, I thrive on delivering innovative solutions. Known for my analytical thinking, teamwork, and communication skills, I aim to make a meaningful impact.</p>
+                    <p>I am an energetic and motivated professional, passionate about tackling challenges in dynamic
+                        environments. With a strong commitment to continuous learning and adapting to emerging
+                        technologies, I thrive on delivering innovative solutions. Known for my analytical thinking,
+                        teamwork, and communication skills, I aim to make a meaningful impact.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
@@ -84,119 +87,157 @@
     <div id="projects">
         <div class="container">
             <h1 class="subtitle">My Projects</h1>
-            <div class="project-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>clg project</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus officia pariatur
-                        dicta laboriosam, libero ipsam. Cum, quidem iste obcaecati fugit, aspernatur aperiam, possimus
-                        maiores numquam hic atque dignissimos doloribus.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-regular fa-file-code"></i>
-                    <h2>Hackthon</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus officia pariatur
-                        dicta laboriosam, libero ipsam. Cum, quidem iste obcaecati fugit, aspernatur aperiam, possimus
-                        maiores numquam hic atque dignissimos doloribus.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-person"></i>
-                    <h2>personal</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ducimus officia pariatur
-                        dicta laboriosam, libero ipsam. Cum, quidem iste obcaecati fugit, aspernatur aperiam, possimus
-                        maiores numquam hic atque dignissimos doloribus.</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- portfolio  -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="subtitle">My Work</h1>
-            <div class="worklist">
-                <div class="work">
-                    <img src="images\img1.jpg">
-                    <div class="layer">
-                        <h3>Social media app</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempora saepe sed nam quasi
-                            possimus iste, beatae voluptatibus, quidem non eius eum ipsum cumque id neque, totam earum
-                            debitis error.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div class="project-container">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <div class="project-details">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Security Alarm System</h2>
+                        <p>This project focuses on the detection of unauthorized entry using ultrasonic sensors. It
+                            employs
+                            an Arduino Uno board to control the system, while mobile phone notifications are sent as
+                            alerts
+                            in case of a breach. The system is designed to provide real-time security updates, ensuring
+                            prompt action when unauthorized access is detected.</p>
+                        <!-- <a href="images/paper published.pdf" target="_blank">Learn More</a> -->
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" target="_blank" class="btn">Live Demo</a>
+                        <a href="#" target="_blank" class="btn">GitHub Repo</a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images\img2.jpg">
-                    <div class="layer">
-                        <h3>music app</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempora saepe sed nam quasi
-                            possimus iste, beatae voluptatibus, quidem non eius eum ipsum cumque id neque, totam earum
-                            debitis error.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                <!-- <div> -->
+                    <div class="project">
+                        <h3>Project 2</h3>
+                        <div class="project-details">
+                            <i class="fa-regular fa-file-code"></i>
+                            <h2>Smart Car Parking System</h2>
+                            <p>Developed as part of a hackathon, this project features a website that enables users
+                                to book
+                                parking slots in advance, pay before arrival, and manage bookings. The system
+                                includes
+                                functionalities like imposing fines for non-updated departure times and extra
+                                charges for
+                                last-minute cancellations, ensuring better management of parking spaces.</p>
+                            <!-- <a href="#">Learn More</a> -->
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" target="_blank" class="btn">Live Demo</a>
+                            <a href="#" target="_blank" class="btn">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images\img3.jpg">
-                    <div class="layer">
-                        <h3>online shopping app</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempora saepe sed nam quasi
-                            possimus iste, beatae voluptatibus, quidem non eius eum ipsum cumque id neque, totam earum
-                            debitis error.</p>
-                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <!-- <div> -->
+                        <div class="project">
+                            <h3>Project 3</h3>
+                            <div class="project-details">
+                                <i class="fa-solid fa-person"></i>
+                                <h2>personal</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis expedita molestiae, asperiores, aliquid ad aliquam officiis qui ipsam numquam dolore aut minima mollitia accusamus magni nam, adipisci ipsum ducimus tempora culpa recusandae molestias illum distinctio. Sapiente ipsum ut quaerat fuga, consequatur praesentium neque iure accusamus illo explicabo, ipsa eligendi.</p>
+                                <!-- <a href="#">Learn More</a> -->
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" target="_blank" class="btn">Live Demo</a>
+                                <a href="#" target="_blank" class="btn">GitHub Repo</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
         </div>
-    </div>
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <div class="certificate">
-            <img src="images/ibm html css.png" alt="Certificate Sample">
-            <a href="images/intro to html css.pdf" target="_blank">View Full Certificate</a>
-          </div>
-        <div class="certificate">
-          <img src="images/ibm cloud.png" alt="Certificate Sample">
-          <a href="images\ibm cloud computing.pdf" target="_blank">View Full Certificate</a>
-        </div>
-        
-        <!-- Add more certificates as needed -->
-      </section>
-      
-    <!-- contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-duotone fa-solid fa-paper-plane"></i>email</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>72779703__</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/sonu-kumar2802/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/kr_sonu02/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <!-- portfolio  -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="images\amazon.jpg">
+                        <div class="layer">
+                            <h3>E-Commerce Platform Replica</h3>
+                            <p>This project replicates the front-end design and user interface of
+                                Amazon.com, providing a
+                                simplified online shopping experience. It focuses on demonstrating
+                                proficiency in HTML, CSS,
+                                and JavaScript.</p>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
-                    <a href="images\SONU KUMAR11.pdf" download class="btn btn2">Download cv/Resume</a>
+                    <div class="work">
+                        <img src="images\img2.jpg">
+                        <div class="layer">
+                            <h3>music app</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempora
+                                saepe sed nam quasi
+                                possimus iste, beatae voluptatibus, quidem non eius eum ipsum cumque id
+                                neque, totam earum
+                                debitis error.</p>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\img3.jpg">
+                        <div class="layer">
+                            <h3>online shopping app</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In tempora
+                                saepe sed nam quasi
+                                possimus iste, beatae voluptatibus, quidem non eius eum ipsum cumque id
+                                neque, totam earum
+                                debitis error.</p>
+                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="your Name" required>
-                        <input type="email" name="Email" placeholder="your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class=" btn btn2">Submit</button>
-                    </form>
-                    <span id="msg">
-                    </span>
-                </div>
+                <a href="#" class="btn">See More</a>
             </div>
         </div>
-        <div class="copyright">
-            <p>copyright @ sonu for the purpose of personal showcase <i class="fa-solid fa-heart"></i></p>
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <div class="certificate">
+                <img src="images/ibm html css.png" alt="Certificate Sample">
+                <a href="images/intro to html css.pdf" target="_blank">View Full Certificate</a>
+            </div>
+            <div class="certificate">
+                <img src="images/ibm cloud.png" alt="Certificate Sample">
+                <a href="images\ibm cloud computing.pdf" target="_blank">View Full Certificate</a>
+            </div>
+
+            <!-- Add more certificates as needed -->
+        </section>
+
+        <!-- contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-duotone fa-solid fa-paper-plane"></i>email</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>72779703__</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sonu-kumar2802/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/kr_sonu02/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                        <a href="images\SONU KUMAR11.pdf" download class="btn btn2">Download
+                            cv/Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="your Name" required>
+                            <input type="email" name="Email" placeholder="your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class=" btn btn2">Submit</button>
+                        </form>
+                        <span id="msg">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ sonu for the purpose of personal showcase <i class="fa-solid fa-heart"></i>
+                </p>
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
