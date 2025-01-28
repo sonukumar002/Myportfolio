@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/17dff8f39f.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="stylen.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images\logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header" onclick="closemenu()">Home</a></li>
-                    <li><a href="#about" onclick="closemenu()">About</a></li>
-                    <li><a href="#projects" onclick="closemenu()">Projects</a></li>
-                    <li><a href="#portfolio" onclick="closemenu()">My Works</a></li>
-                    <li><a href="#certificates" onclick="closemenu()">Certificates</a></li>
-                    <li><a href="#contact" onclick="closemenu()">Contacts</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                <!-- <i class="fa-solid fa-bars"></i> -->
-            </nav>
-            <div class="header-content">
-                <div class="header-text">
-                    <p>Web Developer</p>
-                    <h1>Hi,i am <span>Sonu Kumar</span><br>from India</h1>
-                </div>
-                <div class="featured-image">
-                    <div class="image">
-                        <!-- <img src="images/single.jpg" alt="Sonu Kumar"> -->
-                        <img src="images/n 1.png" alt="Sonu Kumar">
-                    </div>
-                </div>
-            </div>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <img src="images\logo.png" class="logo">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <img src="images\logo.png" class="logo">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
         </div>
+        <div class="menu-links">
+          <li><a href="#header" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="header-content">
+        <div class="header-text">
+            <h1>Hi, I am <span>Sonu Kumar</span><br>from India</h1>
+            <p>Web Developer</p>
+        </div>
+        <div class="featured-image">
+            <div class="image">
+                <img src="images/n 1.png" alt="Sonu Kumar">
+            </div>
+        </diV>
     </div>
-    <!-- about                               -->
+    <!-- about -->
     <div id="about">
         <div class="container">
             <div class="row">
@@ -58,17 +67,20 @@
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="Skills">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>ui/ux</span><br>designing web/app interface</li>
-                            <li><span>web development</span><br>web app development</li>
-                            <li><span>app development</span><br>building android ios app</li>
+                            <li><i class="devicon-cplusplus-plain"></i><span> C++</span><br>For DSA and coding</li>
+                            <li><i class="fa-brands fa-html5"></i><span> HTML5, CSS, JavaScript</span><br>web app development</li>
+                            <li><i class="fa-brands fa-github "> </i><span> GIt & GitHub</span><br>Version control for projects</li>
+                            <li><i class="fa-brands fa-code"></i><span> DSA</span><br>Practicing For coding challanges</li>
+                            <li><i class="fa-brands fa-microsoft"></i><span> Vs Code</span><br>Primary IDE for development tasks</li>
+                            
                         </ul>
                     </div>
                     <div class="tab-contents" id="Experience">
                         <ul>
                             <li><span>c++</span><br>project work</li>
-                            <li><span>hyper text markup lamguage
+                            <li><span>hyper text markup language
 
                                 </span><br>portfolio work</li>
                             <li><span>css</span><br>portfolio</li>
@@ -85,7 +97,6 @@
             </div>
         </div>
     </div>
-
     <div id="projects">
         <div class="container">
             <h1 class="subtitle">My Projects</h1>
@@ -104,8 +115,8 @@
                         <!-- <a href="images/paper published.pdf" target="_blank">Learn More</a> -->
                     </div>
                     <div class="project-buttons">
-                        <a href="#" target="_blank" class="btn">Live Demo</a>
                         <a href="#" target="_blank" class="btn">GitHub Repo</a>
+                        <a href="#" target="_blank" class="btn">Live Demo</a>
                     </div>
                 </div>
                 <!-- <div> -->
@@ -124,8 +135,8 @@
                         <!-- <a href="#">Learn More</a> -->
                     </div>
                     <div class="project-buttons">
-                        <a href="#" target="_blank" class="btn">Live Demo</a>
                         <a href="#" target="_blank" class="btn">GitHub Repo</a>
+                        <a href="#" target="_blank" class="btn">Live Demo</a>
                     </div>
                 </div>
                 <!-- <div> -->
@@ -142,13 +153,12 @@
                         <!-- <a href="#">Learn More</a> -->
                     </div>
                     <div class="project-buttons">
-                        <a href="#" target="_blank" class="btn">Live Demo</a>
                         <a href="#" target="_blank" class="btn">GitHub Repo</a>
+                        <a href="#" target="_blank" class="btn">Live Demo</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- portfolio  -->
     <div id="portfolio">
@@ -203,27 +213,27 @@
         </div>
         <div class="certificate">
             <img src="images/ibm cloud.png" alt="Certificate Sample">
-            <a href="images\ibm cloud computing.pdf" target="_blank">View Full Certificate</a>
+            <a href="images/ibm cloud computing.pdf" target="_blank">View Full Certificate</a>
         </div>
 
         <!-- Add more certificates as needed -->
-    </section>
-
     <!-- contact -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-duotone fa-solid fa-paper-plane"></i>email</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>72779703__</p>
+                    <p><a href="mailto:sonukumar2802@gmail.com">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                    Email</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>7277970330</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/sonu-kumar2802/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/sonu-kumar2802/"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://www.instagram.com/kr_sonu02/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-x-twitter"></i></a> -->
                     </div>
-                    <a href="images\SONU KUMAR11.pdf" download class="btn btn2">Download
-                        cv/Resume</a>
+                    <a href="images/SONU KUMAR11.pdf" download class="btn btn2">Download cv/Resume</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -237,14 +247,12 @@
                 </div>
             </div>
         </div>
-        <!-- <a href="#" class="btn">See More</a>
-            <a href="#"class="btn">Back to Top</a> -->
-        <div class="copyright">
-            <p>copyright @ sonu for the purpose of personal showcase <i class="fa-solid fa-heart"></i>
-            </p>
-        </div>
+        
     </div>
-    <script src="script.js"></script>
+    <div class="copyright">
+        <p>copyright @ sonu for the purpose of personal showcase <i class="fas fa-heart"></i>
+    </div>
+    <script src="scriptn.js"></script>
 </body>
 
 </html>

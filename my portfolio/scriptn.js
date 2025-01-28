@@ -1,4 +1,10 @@
-var tablinks = document.getElementsByClassName("tab-links");
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
+  var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 function opentab(tabname) {
     for (let tablink of tablinks) {
@@ -18,11 +24,11 @@ function opentab(tabname) {
 // side menu
 var sidemenu = document.getElementById("sidemenu");
 function openmenu() {
-    // sidemenu.style.right = "0";
+
     sidemenu.classList.add("active");
 }
 function closemenu() {
-    // sidemenu.style.right = "-250px";
+    
     sidemenu.classList.remove("active");
 }
 document.addEventListener('click',function (event){
@@ -54,5 +60,3 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
-
-
