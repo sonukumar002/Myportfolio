@@ -93,6 +93,8 @@ a:hover {
     z-index: 1000;
     top: 0;
     width: 100%;
+    /* width: 400px; */
+
 
 }
 
@@ -127,9 +129,10 @@ a:hover {
     /* background-color: #2e4053; */
     background-color: #14213d;
     width: fit-content;
+    /* width: 100%; */
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -193,14 +196,19 @@ a:hover {
 }
 
 .featured-image {
-    width: 40%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
+    /* align-items: center; */
     padding-right: 60px;
 }
 
 .featured-image .image img {
+    /* max-width: 100%; */
     width: 60vh;
+    /* display: flex; */
+    height: auto;
+
     border-radius: 50%;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 

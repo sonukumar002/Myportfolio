@@ -3,8 +3,8 @@ function toggleMenu() {
     const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-  }
-  var tablinks = document.getElementsByClassName("tab-links");
+}
+var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 function opentab(tabname) {
     for (let tablink of tablinks) {
@@ -13,9 +13,6 @@ function opentab(tabname) {
     for (let tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
-    // for(tablink of tabcontainer){
-    //     tablink.classlist.remove("active-link");
-    // }
     document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
     // Close the sidebar when a tab is clicked (for mobile view)
@@ -28,11 +25,11 @@ function openmenu() {
     sidemenu.classList.add("active");
 }
 function closemenu() {
-    
+
     sidemenu.classList.remove("active");
 }
-document.addEventListener('click',function (event){
-    if(!sidemenu.contains(event.target)&& !event.target.matches('.fa-bars')){
+document.addEventListener('click', function (event) {
+    if (!sidemenu.contains(event.target) && !event.target.matches('.fa-bars')) {
         closemenu();
     }
 });
