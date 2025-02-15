@@ -118,6 +118,9 @@
     .header-text p {
         font-size: 25px;
     }
+    .text{
+        font-size: 25px;
+    }
 
     .project-container {
         justify-content: center;

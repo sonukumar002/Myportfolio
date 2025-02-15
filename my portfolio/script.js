@@ -29,19 +29,32 @@ function closemenu() {
     sidemenu.classList.remove("active");
 }
 document.addEventListener('click', function (event) {
-    if (!sidemenu.contains(event.target) && !event.target.matches('.fa-bars')) {
+    var menu = document.getElementById("sidemenu");
+    var hamburger = document.querySelector(".fa-bars"); // Assuming this is the button
+    if (sidemenu && !sidemenu.contains(event.target) && !hamburger.contains(event.target)&&
+!event.target.closest(".menu-links")) {
         closemenu();
     }
+    // if (!sidemenu.contains(event.target) && !event.target.matches('.fa-bars')) {
+    //     closemenu();
+    // }
 });
-// window.addEventListener('resize',function(){
-//     if(this.window.innerWidth>768){
-//         sidemenu.classList.remove("active");
-//         sidemenu.style.right="0";
-//     }
-//     else{
-//         sidemenu.style.right="-250px";
-//     }
-// });
+document.addEventListener("DOMContentLoaded", function () {
+    var typed = new Typed(".text", {
+        strings: [
+            "Frontend Developer",
+            "Web Developer",
+            "C++ Programmer",
+            "Problem Solver",
+            "JavaScript Enthusiast"
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 1000,
+        loop: true,
+        showCursor: false
+    });
+});
 const scriptURL = 'https://script.google.com/macros/s/AKfycby2BFQZE1H0DD5mXG1EiXr-Hg7lzjZOtwHtrjgGHkfmWjdipQmkfS6rETWkMbx3Poj1/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
