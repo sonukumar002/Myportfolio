@@ -44,7 +44,10 @@ I have built this fully responsive and interactive portfolio to highlight my wor
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![alt text](<my portfolio/images/screenshots/Screenshot 2025-03-24 012522.png>)
+![alt text](<my portfolio/images/screenshots/Screenshot 2025-03-24 012559.png>)
+![alt text](<my portfolio/images/screenshots/Screenshot 2025-03-24 012622.png>)
+![alt text](<my portfolio/images/screenshots/Screenshot 2025-03-24 012640.png>)
 
 
 ## Roadmap
